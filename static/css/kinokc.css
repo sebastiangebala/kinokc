@@ -1,0 +1,74 @@
+
+a:link {
+outline:none;
+text-decoration: none;
+}
+body {
+font-family: "Caveat Brush";
+background-color: #231F20;
+}
+header .col-sm-10 {
+  display: flex;
+  justify-content: flex-end;
+}
+#KC {
+height: 70px;
+}
+header .col-sm-1 {
+height: 50px;
+width: 50px;
+padding-right: 2px;
+padding-left: 2px;
+border-radius: 9pt;
+}
+header .col-sm-2 {
+height: 170px;
+padding: 0;
+}
+.col-sm-2 img {
+width: 100%;
+height: 170px;
+}
+article {
+height: 600px;
+}
+nav p {
+text-align: center;
+font-size: 25px;
+color: #ED1C24;
+}
+nav .col-sm-2 {
+height: 40px;
+}
+article img {
+width: 100%;
+}
+/*footer*/
+footer p {
+font-size: 15px;
+color: #FDFDFF;
+}
+#knight {
+text-align: center;
+}
+.glyphicon-knight {
+font-size: 75px;
+}
+footer .col-sm-8 {
+display: flex;
+justify-content: flex-end;
+}
+footer .col-sm-8 .col-sm-2 {
+padding: 0;
+}
+footer .col-sm-8 img {
+height: 100px;
+}
+/*repertuar*/
+.nav-rep {
+height: 0
+}
+.rep-white {
+color: #FDFDFF;
+}
+

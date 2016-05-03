@@ -1,0 +1,17 @@
+{% extends 'kinokc/start.html' %}
+
+{% block content %}
+		<nav class="container">
+			<div class="row">
+				<a href="{% url 'repertuar' %}"><p class="hidden-xs col-sm-2 nav-rep">Repartuar</p></a>
+				<a href="{% url 'bilety' %}"><p class="hidden-xs col-sm-2 nav-rep">Bilety</p></a>
+				<a href="{% url 'rezerwacje' %}"><p class="hidden-xs col-sm-2 nav-rep">Rezerwacje</p></a>
+				<a href="{% url 'partnerzy' %}"><p class="hidden-xs col-sm-2 nav-rep">Partnerzy</p></a>
+				<a href="{% url 'kontakt' %}"><p class="col-sx-12 col-sm-2 nav-rep rep-white">Kontakt</p></a>
+			</div>
+		</nav>
+	</div>
+</header>
+<article class="container">
+</article>
+{% endblock content %}
