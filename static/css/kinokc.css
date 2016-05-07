@@ -67,7 +67,7 @@ height: 100px;
 }
 /*repertuar*/
 .nav-rep {
-height: 0
+height: 0;
 }
 .rep-white {
 color: #ED1C24;
@@ -81,11 +81,6 @@ text-shadow: 5px 5px 10px #ED1C24,
 font-size: 20px;
 color: #FDFDFF;
 }
-@media (max-width : 768px) {
-.kontakt-text {
-margin-top: 40px;
-}
-}
 .kontakt-text div {
 text-align: center;
 height: 200px;
@@ -98,7 +93,7 @@ margin-right:20px;
 }
 @media (max-width : 768px) {
 .kontakt-text p {
-padding-top: 40px;
+padding-top: 20px;
 padding-right: 20px;
 }
 }
@@ -114,3 +109,61 @@ margin-top: 37px;
 padding-right:30px;
 border-radius: 7pt;
 }
+/*bilety*/
+.bilety-col {
+text-align: center;
+height: 180px;
+background-image: url('../images/logokc.png');
+background-size: 100% 100%;
+}
+.bilety-col .white {
+font-size: 20px;
+color: #FDFDFF;
+}
+.bilety-col .red {
+margin-top: 40px;
+color: #ED1C24;
+font-size: 20px;
+}
+.uwaga {
+text-align: center;
+color: #ED1C24;
+font-size: 20px;
+padding-top: 40px;
+}
+.bilety-left {
+position: relative;
+float: right;
+height: 100px;
+width: 100px;
+}
+.bilety-right {
+height: 100px;
+width: 100px;
+}
+@media (max-width : 768px) {
+.uwaga {
+margin-top: 60px;
+}
+.bilety-right {
+margin-top: 60px;
+}
+.bilety-col .red {
+padding-right:20px;
+}
+}
+.legitymacja {
+width: 100%;
+height: 100%;
+}
+.legi-left {
+padding: 0;
+}
+.bilety-text {
+text-align: center;
+color: #FDFDFF;
+font-size: 17px;
+padding-right: 20px;
+padding-top: 20px;
+}
+

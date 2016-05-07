@@ -14,5 +14,81 @@
 	</div>
 </header>
 <article class="container">
+	<div class="row">
+		<div class="hidden-xs col-sm-4">
+			<img class="bilety-left" src="{% static "images/uwaga.png" %}" alt="uwaga"/>
+		</div>
+		<div class="col-xs-8 col-sm-4">
+			<p class="uwaga">Uwaga! Płatność za bilety wyłącznie gotówką.</p>
+		</div>
+		<div class="col-xs-4 col-sm-4">
+			<img class="bilety-right" src="{% static "images/cash.png" %}" alt="cash"/>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-4 bilety-col">
+				<p class='red'>
+					Poniedziałek </br>
+				</p>
+				<p class='white'>
+					Normalny: 19 zł</br>
+					Ulgowy: 16 zł</br>
+					(drugi bilet za pół ceny)
+				</p>
+		</div>
+		<div class="col-xs-12 col-sm-4 bilety-col">
+				<p class='red'>
+					Wtorek - Czwartek </br>
+				</p>
+				<p class='white'>
+					Normalny: 19 zł</br>
+					Ulgowy: 16 zł
+				</p>
+		</div>
+		<div class="col-xs-12 col-sm-4 bilety-col">
+				<p class='red'>
+					Piątek (oprócz świąt) </br>
+				</p>
+				<p class='white'>
+					Normalny: 10 zł</br>
+					Ulgowy: 10 zł
+				</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4 legi-left">
+			<div class="col-xs-12 col-sm-12 bilety-col">
+				<p class='red'>
+					Sobota, Niedziela i Święta</br>
+				</p>
+				<p class='white'>
+					Normalny: 21 zł</br>
+					Ulgowy: 19 zł
+				</p>
+			</div>
+			<div class="col-xs-12 col-sm-12 bilety-col">
+				<p class='red'>
+					Legitymacja Partyjna</br>
+				</p>
+				<p class='white'>
+					Z legitymacją partyjną</br>
+					(kartą stałego widza)</br>
+					bilet za 14zł
+				</p>
+			</div>
+			<div class="col-xs-12 col-sm-12 bilety-col">
+				<p class='bilety-text'>
+				Zachowaj zakupiony bilet i zbieraj do 10! 
+				Przynieś wykorzystane bilety do kasy kina 
+				– w zamian podarujemy Ci LEGITYMACJĘ PARTYJNĄ,
+				upoważniającą do zakupu biletów do KINA KC w promocyjnej cenie 14zł,
+				na wszystkie seanse, również w weekendy i święta.
+				</p>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-8">
+				<img class="legitymacja" src="{% static "images/legitymacja.jpg" %}" alt="legitymacja"/>
+		</div>
+	</div>
 </article>
 {% endblock content %}
