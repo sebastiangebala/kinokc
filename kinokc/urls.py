@@ -7,5 +7,5 @@ urlpatterns = [
     url(r'^bilety/$', views.bilety, name='bilety'),
     url(r'^rezerwacje/$', views.rezerwacje, name='rezerwacje'),
     url(r'^partnerzy/$', views.partnerzy, name='partnerzy'),
-    url(r'^konatakt/$', views.kontakt, name='kontakt'),
+    url(r'^kontakt/$', views.kontakt, name='kontakt'),
 ]

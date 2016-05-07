@@ -1,4 +1,5 @@
-{% extends 'kinokc/start.html' %}
+{% extends 'kinokc/base.html' %}
+{% load staticfiles %}
 
 {% block content %}
 		<nav class="container">
@@ -13,5 +14,43 @@
 	</div>
 </header>
 <article class="container">
+	<div class="row">
+		<div class="col-sm-3 partnerzy-col">
+			<img src="{% static "images/eurotrad.png" %}" alt="eurotrad"/>
+		</div>
+		<div class="col-sm-3 partnerzy-col">
+			<img src="{% static "images/cbf.jpg" %}" alt="cbf"/>
+		</div>
+		<div class="col-sm-3 partnerzy-col">
+			<img src="{% static "images/students.jpg" %}" alt="students"/>
+		</div>
+		<div class="col-sm-3 partnerzy-col">
+			<img src="{% static "images/kulisy.jpg" %}" alt="kulisy"/>
+		</div>
+		<div class="col-sm-3 partnerzy-col">
+			<img src="{% static "images/5kg.png" %}" alt="5kg"/>
+		</div>
+		<div class="col-sm-3 partnerzy-col">
+			<img src="{% static "images/waw.png" %}" alt="waw"/>
+		</div>
+		<div class="col-sm-3 partnerzy-col">
+			<img src="{% static "images/irka.jpg" %}" alt="irka"/>
+		</div>
+		<div class="col-sm-3 partnerzy-col">
+			<img src="{% static "images/polska.png" %}" alt="polska"/>
+		</div>
+		<div class="col-sm-3 partnerzy-col">
+			<img src="{% static "images/sksil.jpg" %}" alt="sksil"/>
+		</div>
+		<div class="col-sm-3 partnerzy-col">
+			<img src="{% static "images/pisf.jpg" %}" alt="pisf"/>
+		</div>
+		<div class="col-sm-3 partnerzy-col">
+			<img src="{% static "images/filmoteka.png" %}" alt="filmoteka"/>
+		</div>
+		<div class="col-sm-3 partnerzy-col">
+			<img src="{% static "images/kiosk.jpg" %}" alt="kiosk"/>
+		</div>
+	</div>
 </article>
 {% endblock content %}

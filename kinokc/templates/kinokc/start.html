@@ -1,29 +1,6 @@
-<!DOCTYPE html>
-{% load staticfiles %} 
-<html>
-<head>
-  <title>kino KC</title> 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">     
-  <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>  
-  <link rel="stylesheet" href="{% static 'css/kinokc.css' %}">
-  <link href="//fonts.googleapis.com/css?family=Caveat Brush&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  <script src="{% static "js/jquery-1.12.3.js" %}"></script>
-  <script src="{% static "js/jquery.js" %}"></script>
-</head>
-<body>
-<header class="container">
-	<div class="row"> 
-		<a class="col-xs-12 col-sm-2" href="{% url 'start' %}"><img src="{% static "images/logo.png" %}" alt="logo"/></a>
-		<div class="hidden-xs col-sm-10">
-          <a href=""><img class="col-sm-1" src="{% static "images/fejs.png" %}" alt="fejs"/></a>
-          <a href=""><img class="col-sm-1" src="{% static "images/twitter.png" %}" alt="twitter"/></a>
-          <a href=""><img class="col-sm-1" src="{% static "images/google.png" %}" alt="google"/></a>
-          <a href=""><img class="col-sm-1" src="{% static "images/insta.png" %}" alt="insta"/></a>
-		</div>
-		<div class="hidden-xs col-sm-10" id="KC"></div>
-		{% block content %}
+{% extends 'kinokc/base.html' %}
+
+{% block content %}
 		<nav class="container">
 			<div class="row test">
 				<a href="{% url 'repertuar' %}"><p class="col-xs-12 col-sm-2">Repartuar</p></a>
@@ -37,20 +14,4 @@
 </header>
 <article class="container">
 </article>
-{% endblock %}
-<footer class="container">
-	<div class="row">
-		<p class="col-xs-12 col-sm-2">
-			kino KC</br>
-			ul Nowy Świat 6/12</br>
-			(wejście od dziedzińca)</br> 
-		</p>
-		<p class="col-xs-12 col-sm-2">newsletter</p>
-		<div class="col-xs-12 col-sm-8">
-			<img class="col-xs-12 col-sm-2" src="{% static "images/sks.png" %}" alt="sks"/>
-			<p class="col-xs-12 col-sm-2" id="knight"><span class="glyphicon glyphicon-knight"></span></br>Panama Project</p>
-		</div>
-	</div>
-</footer>
-</body>
-</html>
+{% endblock content %}
