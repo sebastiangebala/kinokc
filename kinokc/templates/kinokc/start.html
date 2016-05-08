@@ -1,4 +1,5 @@
 {% extends 'kinokc/base.html' %}
+{% load staticfiles %}
 
 {% block content %}
 		<nav class="container">
@@ -12,6 +13,79 @@
 		</nav>
 	</div>
 </header>
-<article class="container">
-</article>
+<div class="container col-sm-12">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active curousel-img">
+        <img src="{% static "images/slide-1.jpg" %}" alt="slide-1">
+        <div class="carousel-caption">
+          <h3>W sercu Warszawy...</h3>
+        </div>
+      </div>
+
+      <div class="item curousel-img">
+        <img src="{% static "images/slide-2.jpg" %}" alt="slide-2">
+        <div class="carousel-caption">
+          <h3>W podziemiach byłej siedziby KC PZPR...</h3>
+        </div>
+      </div>
+    
+      <div class="item curousel-img">
+        <img src="{% static "images/slide-3.jpg" %}" alt="slide-3">
+        <div class="carousel-caption">
+          <h3>...mieści się Kino KC</h3>
+        </div>
+      </div>
+
+      <div class="item curousel-img">
+        <img src="{% static "images/slide-4.jpg" %}" alt="slide-4">
+        <div class="carousel-caption">
+          <h3>Z najlepszymii filmami!</h3>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<div class="container">
+	<div="row">
+		<h1 class="col-xs-12 col-sm-12 start-title">O KINIE</h1>
+		<img class="col-xs-12 col-sm-4 start-img" src="{% static "images/kino-inside.jpg" %}" alt="kino-inside">
+		<p class=" col-xs-12 col-sm-8 start-description">Nominowane przez dodatek Gazety Wyborczej „Co jest Grane” w kategorii Miejsce Roku 2011 Kino KC, powstało 22 lipca 2011 r. Repertuar kina jest starannie dobierany, oscyluje wokół filmów festiwalowych, Art – House. Na ekranie spotkać często można premierowe pokazy młodych reżyserów ale także filmy programowane na wyraźne życzenie widzów.  Kino KC to idealne miejsce dla ludzi, którzy idą do kina, żeby obejrzeć filmy bez tzw. „dodatków”. Seanse zaczynają się punktualnie – kino nie wyświetla bloków reklamowych. „To dość intymne miejsce i z duszą „- mówią stali bywalcy kina, niewielka sala mieści ok. 120 osób.</p>
+	</div>
+</div>
+<div class="container">
+	<div="row">
+		<h1 class="col-xs-12 col-sm-12 start-title">KAPITUŁA PROGRAMOWA</h1>
+		<img class="col-xs-12 col-sm-4 start-img" src="{% static "images/adam.jpg" %}" alt="adam">
+		<p class=" col-xs-12 col-sm-8 start-description"><strong>Adam Bajerski</strong></br>Operator filmowy, m. in. autor zdjęć do filmów: „Imagine”, „Mała matura 1947” , „Sztuczki”, „Zmruż oczy”. „Z radością przyjąłem zaproszenie do kapituły programowej kina. Chcę pomóc w wyborze intrygujących projektów z wielkiego oceanu multimedialnego ,który nas otacza. Jest to wprawdzie prawie niemożliwe ,ale ponieważ każdego z nas co innego wzrusza, mam nadzieję, że nasze wybory będą inspirujące i nietypowe. Wierzę, że filmowcy znajdą tu miejsce do prezentacji swoich utworów oraz do szczerych dyskusji. Mam nadzieję, że stworzymy w tej niewielkiej sali przestrzeń otwartą na sztukę bezinteresowną”.</p>
+	</div>
+</div>
+<div class="container">
+	<div="row">
+		<img class="col-xs-12 col-sm-4 start-img" src="{% static "images/mietek.jpg" %}" alt="mietek">
+		<p class=" col-xs-12 col-sm-8 start-description"><strong>Mieczysław Szcześniak</strong></br>Polski piosenkarz, kompozytor i autor tekstów. W ubiegłym roku Mietek Szcześniak skończył pracę w Los Angeles nad pierwszą anglojęzyczną płytą, przy produkcji której zaangażowani są wybitni muzycy i producenci z USA: Wendy Waldman – zdobywczyni nagrody Grammy za piosenkę „Save the Best for Last” Vanessy Williams. Przy płycie współpracował również H B Barnum (pianista, aranżer, producent muzyczny i kompozytor), który współpracował m.in. z Aretą Franklin. W nagraniach wziął również udział czarny chór Life Choir pod dyrekcją H B Barnuma. Owocem tej pracy jest płyta „Sings” dostępna w Polsce i w USA. Na uroczystość otwarcia Kina KC przygotował takie słowa: „Pozdrawiam miłośników KC – z przyjemnością propagandować będę dla Was sztukę muzyczną w kinie. Dobrego otwarcia się życzę. Do zobaczenia, Mieczysław”.</p>
+	</div>
+</div>
 {% endblock content %}

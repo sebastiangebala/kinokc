@@ -19,7 +19,7 @@
 			<div class="col-xs-12 col-sm-12">
 				<p>
 					Adres:</br>
-					Ul Nowy Świat 6/12</br>
+					ul. Nowy Świat 6/12</br>
 					00-400 Warszawa</br>
 				</p>
 			</div>
@@ -27,14 +27,15 @@
 				<p>
 					Budynek Centrum</br>
 					Bankowo – Finansowego</br>
-					„Nowy Świat” S.A.</br>
+					„Nowy Świat” SA</br>
 					(wejście od dziedzińca)</br>
 				</p>
 			</div>
 			<div class="col-xs-12 col-sm-12">
 				<p>
 					REZERWACJA BILETÓW: </br>
-					510194247
+					<span class="glyphicon glyphicon-phone-alt gly-color"></span></br>
+					510 194 247
 				</p>
 			</div>
 			<div class="col-xs-12 col-sm-12">
@@ -43,7 +44,9 @@
 				</p>
 			</div>
 		</div>
-		<img class="hidden-xs col-sm-8 kontakt-img" src="{% static "images/map.png" %}" alt="map"/>
+		<div class="col-sm-8">
+			<a class="hidden-xs col-sm-12 kontakt-img" href="https://www.google.pl/maps/place/Kino+KC/@52.2301057,21.019435,16.25z/data=!4m5!3m4!1s0x471eccf6df09c199:0xa9bc142e2361c4f7!8m2!3d52.2309551!4d21.0220569" target="_blank"><img id="mapa-google" src="{% static "images/mapa.png" %}" alt="mapa"/></a>
+			<img class="hidden-xs col-sm-12 kontakt-img" src="{% static "images/map.png" %}" alt="map"/>
 	</div>
 </article>
 {% endblock content %}
