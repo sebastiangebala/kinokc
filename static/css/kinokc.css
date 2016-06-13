@@ -10,8 +10,8 @@ font-family: "Anton";
 background-color: #231F20;
 }
 header .col-sm-10 {
-  display: flex;
-  justify-content: flex-end;
+display: flex;
+justify-content: flex-end;
 }
 #KC {
 height: 70px;
@@ -103,7 +103,7 @@ height: 300px;
 margin-bottom: 20px;
 }
 #myCarousel {
-margin-top: 20px;
+margin-top: 5px;
 }
 .repertuar-col {
 padding-right: 50px;
@@ -253,7 +253,6 @@ width: 100px;
 height: 100px;
 width: 100px;
 }
-
 .legitymacja {
 width: 100%;
 height: 100%;
