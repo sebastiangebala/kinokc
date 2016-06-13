@@ -165,6 +165,16 @@ color: green;
 .repertuar-top-border {
 border-top: 1px solid #CBD2D4;
 }
+@media (max-width: 768px) {
+.repertuar-col img {
+height: 100%;
+}
+}
+@media (min-width: 480px) and (max-width: 768px) {
+.repertuar-col {
+padding-right: 70px;
+}
+}
 /*kontakt*/
 .kontakt-text {
 font-size: 20px;
