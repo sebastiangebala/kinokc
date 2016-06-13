@@ -7,7 +7,7 @@
 				<a href="{% url 'repertuar' %}"><p class="col-sx-12 col-sm-2 nav-rep">Repartuar</p></a>
 				<a href="{% url 'bilety' %}"><p class="hidden-xs col-sm-2 nav-rep">Bilety</p></a>
 				<a href="{% url 'rezerwacje' %}"><p class="hidden-xs col-sm-2 nav-rep">Rezerwacje</p></a>
-				<a href="{% url 'partnerzy' %}"><p class="hidden-xs col-sm-2 nav-rep">Partnerzy</p></a>
+				<a href="{% url 'partnerzy' %}"><p class="hidden-xs col-sm-2 nav-rep">Towarzysze</p></a>
 				<a href="{% url 'kontakt' %}"><p class="hidden-xs col-sm-2 nav-rep">Kontakt</p></a>
 			</div>
 		</nav>
@@ -25,7 +25,7 @@
 					<a class="col-sx-4 col-sm-4 repertuar-glyphicon-cloud-upload" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-trash"></span></a>
 				{% endif %}
 					<h1 class="col-sx-12 col-sm-12 post_detail_title">{{ post.title }}</h1>
-					<p class="col-sx-6 col-sm-6 post_detail_gramy">Gramy: {{ post.display_date }}</p>
+					<p class="col-sx-6 col-sm-6 post_detail_gramy">Gramy: {{ post.display_date|date:"l j F" }}</p>
 					<p class="col-sx-6 col-sm-6 post_detail_gramy">godz: {{ post.godzina|time:"H:i" }}</p>
 					<p class="col-sx-12 col-sm-12 post_detail_text">{{ post.text }}</p>
 					<p class="col-sx-12 col-sm-12">

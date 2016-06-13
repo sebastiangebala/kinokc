@@ -102,9 +102,6 @@ padding: 0;
 height: 300px;
 margin-bottom: 20px;
 }
-#myCarousel {
-margin-top: 5px;
-}
 .repertuar-col {
 padding-right: 50px;
 height: 250px;
@@ -221,6 +218,11 @@ margin-top: 37px;
 padding-right:30px;
 border-radius: 7pt;
 }
+@media (min-width: 480px) and (max-width: 768px) {
+.partnerzy-col {
+padding-right: 70px;
+}
+}
 /*bilety*/
 .bilety-col {
 text-align: center;
@@ -283,6 +285,7 @@ color: #ED1C24;
 }
 .post_detail_gramy {
 color: green;
+font-size: 17px;
 }
 .post-detail-align {
 text-align: justify;
@@ -292,7 +295,7 @@ text-align: justify;
 color: #FDFDFF;
 }
 .post_detail_share {
-color: #FDFDFF;
+color: green;
 font-size: 70px;
 }
 /*post_new*/
