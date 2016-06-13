@@ -6,7 +6,7 @@ outline:none;
 text-decoration: none;
 }
 body {
-font-family: "Caveat Brush";
+font-family: "Anton";
 background-color: #231F20;
 }
 header .col-sm-10 {
@@ -70,10 +70,10 @@ height: 0;
 }
 .rep-white {
 color: #ED1C24;
-text-shadow: 5px 5px 10px #ED1C24,
-			-5px -5px 10px #ED1C24,
-			 5px -5px 10px #ED1C24,
-			 -5px 5px 10px #ED1C24;
+text-shadow: 5px 5px 40px #ED1C24,
+			-5px -5px 40px #ED1C24,
+			 5px -5px 40px #ED1C24,
+			 -5px 5px 40px #ED1C24;
 }
 .curousel-img h3 {
 color: #ED1C24;
@@ -104,6 +104,66 @@ margin-bottom: 20px;
 }
 #myCarousel {
 margin-top: 20px;
+}
+.repertuar-col {
+padding-right: 50px;
+height: 250px;
+background-image: url('../images/logokc.png');
+background-size: 100% 100%;
+}
+.repertuar-col img {
+height: 200px;
+margin-top: 25px;
+border-radius: 7pt;
+border: 1px solid #CBD2D4;
+}
+.repertuar-text {
+color: #FDFDFF;
+}
+.repertuar-text-title {
+height: 50px;
+color: #ED1C24;
+font-size: 30px;
+padding-left: 0px;
+}
+.repertuar-text-title:hover {
+color: #ED1C24;
+text-shadow: 2px 2px 35px #ED1C24,
+			-2px -2px 35px #ED1C24,
+			 2px -2px 35px #ED1C24,
+			 -2px 2px 35px #ED1C24;
+}
+.repertuar-text p {
+padding-left: 0px;
+}
+.repertuar-text-text {
+text-overflow: ellipsis;
+overflow: hidden;
+border: 1px solid #231F20;
+max-height: 100px;
+text-align: justify;
+}
+.repertuar-text-text a {
+color: #FDFDFF;
+}
+.repertuar-text-text-pe {
+position: absolute; 
+bottom: 0; 
+left: 0;
+width: 100%; 
+text-align: center; 
+margin: 0; 
+padding: 50px 0; 
+background-image: linear-gradient(to bottom, transparent, #231F20);
+}
+.repertuar-time {
+height: 25px;
+margin-top: 0px;
+margin-bottom: 0px;
+color: green;
+}
+.repertuar-top-border {
+border-top: 1px solid #CBD2D4;
 }
 /*kontakt*/
 .kontakt-text {
@@ -199,4 +259,31 @@ font-size: 15px;
 padding-right: 20px;
 padding-top: 20px;
 }
-
+/*post*/
+.post {
+color: #FDFDFF;
+font-size: 15px;
+}
+/*post_detail*/
+.post_detail_img {
+border-radius: 7pt;
+border: 1px solid #CBD2D4;
+padding: 0;
+}
+.post_detail_title {
+color: #ED1C24;
+}
+.post_detail_gramy {
+color: green;
+}
+.post-detail-align {
+text-align: justify;
+}
+.post_detail_text {
+text-align: justify;
+color: #FDFDFF;
+}
+.post_detail_share {
+color: #FDFDFF;
+font-size: 70px;
+}

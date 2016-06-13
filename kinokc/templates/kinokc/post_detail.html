@@ -1,0 +1,38 @@
+{% extends 'kinokc/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+		<nav class="container">
+			<div class="row">
+				<a href="{% url 'repertuar' %}"><p class="col-sx-12 col-sm-2 nav-rep">Repartuar</p></a>
+				<a href="{% url 'bilety' %}"><p class="hidden-xs col-sm-2 nav-rep">Bilety</p></a>
+				<a href="{% url 'rezerwacje' %}"><p class="hidden-xs col-sm-2 nav-rep">Rezerwacje</p></a>
+				<a href="{% url 'partnerzy' %}"><p class="hidden-xs col-sm-2 nav-rep">Partnerzy</p></a>
+				<a href="{% url 'kontakt' %}"><p class="hidden-xs col-sm-2 nav-rep">Kontakt</p></a>
+			</div>
+		</nav>
+	</div>
+</header>
+<article class="container">
+    <div class="row">
+		{% if post.image %}
+			<img class="col-sx-12 col-sm-6 post_detail_img" src="{{ post.image.url }}" class="img-responsive"/>
+        {% endif %}
+			<div class="col-sx-12 col-sm-6">
+				{% if user.is_authenticated %}
+					<a class="col-sx-6 col-sm-6 btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+					<a class="col-sx-6 col-sm-6 btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-trash"></span></a>
+				{% endif %}
+					<h1 class="col-sx-12 col-sm-12 post_detail_title">{{ post.title }}</h1>
+					<p class="col-sx-6 col-sm-6 post_detail_gramy">Gramy: {{ post.display_date }}</p>
+					<p class="col-sx-6 col-sm-6 post_detail_gramy">godz: {{ post.godzina|time:"H:i" }}</p>
+					<p class="col-sx-12 col-sm-12 post_detail_text">{{ post.text }}</p>
+					<p class="col-sx-12 col-sm-12">
+						<a href="{% url 'repertuar' %}">
+							<span class="glyphicon glyphicon-share post_detail_share"></span>
+						</a>
+					</p>
+			</div>
+    </div>
+</article>
+{% endblock content %}

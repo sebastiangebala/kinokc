@@ -8,3 +8,4 @@ $(document).ready(function() {
 		$(this).fadeTo("fast", 0.5);
 	});
 });
+

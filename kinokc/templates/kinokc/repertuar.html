@@ -14,5 +14,27 @@
 	</div>
 </header>
 <article class="container">
+	{% if user.is_authenticated %}
+	<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+	{% endif %}
+	{% for post in posts %}
+		<div class="row repertuar-top-border">
+			<div class="col-sx-12 col-sm-3 repertuar-col">
+				<a href="{% url 'post_detail' pk=post.pk %}">
+				{% if post.image %}
+					<img src="{{ post.image.url }}" class="img-responsive"/>
+				{% endif %}
+				</a>
+			</div>
+			<div class="col-sx-12 col-sm-9 repertuar-text">
+				<h1><a class="col-sx-12 col-sm-12 repertuar-text-title" href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+				<p class="col-sx-6 col-sm-12 repertuar-time">{{ post.display_date|date:"l j F" }}</p>
+				<p class="col-sx-6 col-sm-12 repertuar-time">godz: {{ post.godzina|time:"H:i" }}</p>
+				<div class="repertuar-text-text"><a href="{% url 'post_detail' pk=post.pk %}">
+					<p class="col-sx-12 col-sm-12 repertuar-text-text-pe">{{ post.text|linebreaks }}</p>
+				</a></div>
+			</div>
+		</div>
+	{% endfor %}
 </article>
 {% endblock content %}
