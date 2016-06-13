@@ -13,8 +13,8 @@
 		</nav>
 	</div>
 </header>
-<article class="container">
-    <h1>New post</h1>
+<article class="container post_new">
+    <h1>Nowy film</h1>
     <form method="POST" class="post-form" enctype='multipart/form-data'>{% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="save btn btn-default">Save</button>

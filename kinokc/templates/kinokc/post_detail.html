@@ -20,8 +20,9 @@
         {% endif %}
 			<div class="col-sx-12 col-sm-6">
 				{% if user.is_authenticated %}
-					<a class="col-sx-6 col-sm-6 btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-					<a class="col-sx-6 col-sm-6 btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-trash"></span></a>
+					<a class="col-sx-4 col-sm-4 repertuar-glyphicon-cloud-upload" href="{% url 'post_new' %}"><span class="glyphicon glyphicon-cloud-upload"></span></a>
+					<a class="col-sx-4 col-sm-4 repertuar-glyphicon-cloud-upload" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+					<a class="col-sx-4 col-sm-4 repertuar-glyphicon-cloud-upload" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-trash"></span></a>
 				{% endif %}
 					<h1 class="col-sx-12 col-sm-12 post_detail_title">{{ post.title }}</h1>
 					<p class="col-sx-6 col-sm-6 post_detail_gramy">Gramy: {{ post.display_date }}</p>

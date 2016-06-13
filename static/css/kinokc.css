@@ -169,11 +169,20 @@ border-top: 1px solid #CBD2D4;
 .repertuar-col img {
 height: 100%;
 }
+.repertuar-text-text {
+max-height: 140px;
+margin-bottom: 30px;
+}
 }
 @media (min-width: 480px) and (max-width: 768px) {
 .repertuar-col {
 padding-right: 70px;
 }
+}
+.repertuar-glyphicon-cloud-upload {
+color: blue;
+font-size: 30px;
+text-align: center;
 }
 /*kontakt*/
 .kontakt-text {
@@ -244,17 +253,7 @@ width: 100px;
 height: 100px;
 width: 100px;
 }
-@media (max-width : 768px) {
-.uwaga {
-margin-top: 20px;
-}
-.bilety-right {
-margin-top: 20px;
-}
-.bilety-col .red {
-padding-right:20px;
-}
-}
+
 .legitymacja {
 width: 100%;
 height: 100%;
@@ -296,4 +295,8 @@ color: #FDFDFF;
 .post_detail_share {
 color: #FDFDFF;
 font-size: 70px;
+}
+/*post_new*/
+.post_new {
+color: green;
 }
