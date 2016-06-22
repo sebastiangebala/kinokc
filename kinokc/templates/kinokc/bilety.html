@@ -7,15 +7,15 @@
 				<a href="{% url 'repertuar' %}"><p class="hidden-xs col-sm-2 nav-rep">Repartuar</p></a>
 				<a href="{% url 'bilety' %}"><p class="col-sx-12 col-sm-2 nav-rep rep-white">Bilety</p></a>
 				<a href="{% url 'rezerwacje' %}"><p class="hidden-xs col-sm-2 nav-rep">Rezerwacje</p></a>
-				<a href="{% url 'partnerzy' %}"><p class="hidden-xs col-sm-2 nav-rep">Partnerzy</p></a>
+				<a href="{% url 'partnerzy' %}"><p class="hidden-xs col-sm-2 nav-rep">Towarzysze</p></a>
 				<a href="{% url 'kontakt' %}"><p class="hidden-xs col-sm-2 nav-rep">Kontakt</p></a>
 			</div>
 		</nav>
 	</div>
 </header>
 <!-- carousel -->
-<div class="container col-sm-12">
-  <br>
+<div class="container carousel_strech">
+<div class="col-sm-12 carousel_strech">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -67,6 +67,7 @@
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+  </div>
   </div>
 </div>
 <!--end carousel-->
@@ -134,17 +135,22 @@
 				</p>
 			</div>
 			<div class="col-xs-12 col-sm-12 bilety-col">
-				<p class='bilety-text'>
-				Zachowaj zakupiony bilet i zbieraj do 10! 
-				Przynieś wykorzystane bilety do kasy kina 
-				– w zamian podarujemy Ci <font color="#ED1C24">LEGITYMACJĘ PARTYJNĄ</font>,
-				upoważniającą do zakupu biletów do KINA KC w promocyjnej cenie 14zł,
-				na wszystkie seanse, również w weekendy i święta.
+				<p class='red'>
+				Zdobądź LEGITYMACJĘ PARTYJNĄ
+				</p>
+				<p class='white'>
+					I zostań</br>
+					naszym</br>
+					Towarzyszem
 				</p>
 			</div>
 		</div>
-		<div class="col-xs-12 col-sm-8">
+		<div class="hidden-xs col-sm-8 view view-first">
 				<img class="legitymacja" src="{% static "images/legitymacja.jpg" %}" alt="legitymacja"/>
+				<div class="mask">  
+					<h2>Zdobądź Legitymację Partyjną!</h2>  
+					<p>Zachowaj zakupiony bilet i zbieraj do 10! </br>Przynieś wykorzystane bilety do kasy kina </br>– w zamian podarujemy Ci LEGITYMACJĘ PARTYJNĄ, </br>upoważniającą do zakupu biletów do KINA KC w promocyjnej cenie 14zł,</br> na wszystkie seanse, </br>również w weekendy i święta.</p>  
+				</div>
 		</div>
 	</div>
 </article>

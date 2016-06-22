@@ -39,14 +39,16 @@
 				</p>
 			</div>
 			<div class="col-xs-12 col-sm-12">
-				<p>
+				<p id="ostatni-seans">
 					Ostatni seans w danym dniu wyświetlamy dla minimum 2 osób posiadających zakupiony bilet ( nie dotyczy darmowych biletów).
 				</p>
 			</div>
 		</div>
 		<div class="col-sm-8">
-			<a class="hidden-xs col-sm-12 kontakt-img" href="https://www.google.pl/maps/place/Kino+KC/@52.2301057,21.019435,16.25z/data=!4m5!3m4!1s0x471eccf6df09c199:0xa9bc142e2361c4f7!8m2!3d52.2309551!4d21.0220569" target="_blank"><img id="mapa-google" src="{% static "images/mapa.png" %}" alt="mapa"/></a>
-			<img class="hidden-xs col-sm-12 kontakt-img" src="{% static "images/map.png" %}" alt="map"/>
+			<div class="hidden-xs col-sm-12">
+				<iframe class='google_map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.6840181145385!2d21.019862850955068!3d52.230958365263085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eccf6df09c199%3A0xa9bc142e2361c4f7!2sKino+KC!5e0!3m2!1spl!2sat!4v1466329897807" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<img class="col-xs-12 col-sm-12 kontakt-img" src="{% static "images/map.png" %}" alt="map"/>
 	</div>
 </article>
 {% endblock content %}

@@ -1,19 +1,27 @@
 from django.shortcuts import render
 from django.utils import timezone
-from .models import Post
+from .models import Post, SignUp, Reservation
 from django.shortcuts import render, get_object_or_404
-from .forms import PostForm
+from .forms import PostForm, SignUpForm, ReservationForm
 from django.shortcuts import redirect
-
+	
 def repertuar(request):
 	posts = Post.objects.all().order_by('display_date', 'godzina')
 	return render(request, 'kinokc/repertuar.html', {'posts': posts})
 def start(request):
-    return render(request, 'kinokc/start.html', {'start': start})
+	return render(request, 'kinokc/start.html', {'start': start})
 def bilety(request):
     return render(request, 'kinokc/bilety.html', {'bilety': bilety})
 def rezerwacje(request):
-    return render(request, 'kinokc/rezerwacje.html', {'rezerwacje': rezerwacje})
+	if request.method == "POST":
+		formreservation = ReservationForm(request.POST or None)
+		if formreservation.is_valid():
+			post = formreservation.save(commit=False)
+			post.save()
+			return redirect('kinokc.views.res_is_done')
+	else:
+		formreservation = ReservationForm()
+	return render(request, 'kinokc/rezerwacje.html', {'formreservation': formreservation})
 def partnerzy(request):
     return render(request, 'kinokc/partnerzy.html', {'partnerzy': partnerzy})
 def kontakt(request):
@@ -46,3 +54,17 @@ def post_remove(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.delete()
     return redirect('kinokc.views.repertuar')
+def signup(request):
+	if request.method == "POST":
+		formsignup = SignUpForm(request.POST or None)
+		if formsignup.is_valid():
+			post = formsignup.save(commit=False)
+			post.save()
+			return redirect('kinokc.views.thankyou')
+	else:
+		formsignup = SignUpForm()
+	return render(request, 'kinokc/signup.html', {'formsignup': formsignup})
+def thankyou(request):
+	return render(request, 'kinokc/thankyou.html', {'thankyou': thankyou})
+def res_is_done(request):
+	return render(request, 'kinokc/res_is_done.html', {'res_is_done': res_is_done})

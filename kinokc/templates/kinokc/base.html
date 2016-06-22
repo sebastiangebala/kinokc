@@ -12,7 +12,6 @@
   <script src="{% static "js/jquery-1.12.3.js" %}"></script>
   <script src="{% static "js/jquery.js" %}"></script> 
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
-   
 <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -42,10 +41,17 @@
 			ul Nowy Świat 6/12</br>
 			(wejście od dziedzińca)</br> 
 		</p>
-		<p class="col-xs-12 col-sm-2">newsletter</p>
-		<div class="col-xs-12 col-sm-8">
-			<img class="col-xs-12 col-sm-2" src="{% static "images/sks.png" %}" alt="sks"/>
-			<p class="col-xs-12 col-sm-2" id="knight"><span class="glyphicon glyphicon-knight"></span></br>Panama Project</p>
+		<div class="row col-xs-12 col-sm-4 footer-newsletter">
+			<p class="footer-red-text">Newsletter</p>
+			<p>
+				<a href="{% url 'signup' %}">
+					<button type="submit" class="save btn btn-default">Dołącz</button>
+				</a>
+			</p>
+		</div>
+		<div class="col-xs-12 col-sm-6">
+			<p class="col-xs-6 col-sm-2 pull-right" id="knight"><span class="glyphicon glyphicon-knight"></span></br>Panama Project</p>
+			<img class="col-xs-6 col-sm-2 pull-right" src="{% static "images/sks.png" %}" alt="sks"/>
 		</div>
 	</div>
 </footer>
