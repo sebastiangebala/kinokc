@@ -176,7 +176,7 @@ text-align: center;
 .reservation-form {
 border-radius: 7pt 7pt 0 0;
 font-size: 15px;
-color: blue;
+color: #ED1C24;
 text-align: center;
 background-image: url('../images/reservationimg.jpg');
 background-size: 100% 100%;
@@ -221,6 +221,9 @@ font-size: 15px;
 }
 .gly-color {
 color: #ED1C24;
+}
+.gly-color2 {
+color: green;
 }
 .google_map {
 margin-top: 40px;
